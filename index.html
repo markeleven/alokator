@@ -6,6 +6,7 @@
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/alokator.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<title>Time Alokator</title>
 </head>
@@ -36,9 +37,28 @@
 
     <main role="main" class="container">
       <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
-        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+        <h1>New Task</h1>
+        <form>
+          <div class="form-group">
+            <label for="inputTask">Task name</label>
+            <input type="email" class="form-control" id="inputTask" aria-describedby="emailHelp" placeholder="Enter task name">
+          </div>
+          <div class="form-group">
+            <label for="inputDate">Deadline</label>
+            <input type="text" class="form-control" id="inputDate" placeholder="Date time">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="inputTop">
+            <label class="form-check-label" for="inputTop">Top priority</label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-check"></i>
+            Submit
+          </button>
+        </form>
+
+
       </div>
     </main>
 
